@@ -1,0 +1,99 @@
+syntax:
+20ns-cbow-topn=1:
+fiil-mastar-şimdiki-zaman: 58.6% (619/1056)
+isim-tekil-çogul: 76.7% (1021/1331)
+isim-çekim-eki-de-da: 73.3% (774/1056)
+fiil-mastar-gelecek-zaman: 86.8% (917/1056)
+fiil-mastar-ebilmek-eki: 74.7% (789/1056)
+fiil-mastar-tedir-tadır-eki: 88.2% (931/1056)
+fiil-mastar-mıştır-miştir-eki: 97.4% (1029/1056)
+fiil-mastar-iken-eki: 83.0% (877/1056)
+fiil-mastar-dili-geçmiş-zaman: 47.3% (500/1056)
+fiil-mastar-öğrenilen-geçmiş-zaman: 88.5% (935/1056)
+fiil-mastar-şimdiki-zaman-hikaye: 50.9% (537/1056)
+Total accuracy: 75.0% (8929/11891)
+
+20ns-cbow-topn=2:
+fiil-mastar-şimdiki-zaman: 93.1% (983/1056)
+isim-tekil-çogul: 84.1% (1120/1331)
+isim-çekim-eki-de-da: 83.7% (884/1056)
+fiil-mastar-gelecek-zaman: 96.4% (1018/1056)
+fiil-mastar-ebilmek-eki: 82.8% (874/1056)
+fiil-mastar-tedir-tadır-eki: 88.6% (936/1056)
+fiil-mastar-mıştır-miştir-eki: 100.0% (1056/1056)
+fiil-mastar-iken-eki: 96.6% (1020/1056)
+fiil-mastar-dili-geçmiş-zaman: 71.6% (756/1056)
+fiil-mastar-öğrenilen-geçmiş-zaman: 91.1% (962/1056)
+fiil-mastar-şimdiki-zaman-hikaye: 78.4% (828/1056)
+Total accuracy: 87.7% (10437/11891)
+
+20ns-cbow-topn=5:
+fiil-mastar-şimdiki-zaman: 99.8% (1054/1056)
+isim-tekil-çogul: 90.2% (1200/1331)
+isim-çekim-eki-de-da: 90.5% (956/1056)
+fiil-mastar-gelecek-zaman: 97.7% (1032/1056)
+fiil-mastar-ebilmek-eki: 87.6% (925/1056)
+fiil-mastar-tedir-tadır-eki: 88.7% (937/1056)
+fiil-mastar-mıştır-miştir-eki: 100.0% (1056/1056)
+fiil-mastar-iken-eki: 99.1% (1047/1056)
+fiil-mastar-dili-geçmiş-zaman: 87.4% (923/1056)
+fiil-mastar-öğrenilen-geçmiş-zaman: 92.1% (973/1056)
+fiil-mastar-şimdiki-zaman-hikaye: 93.9% (992/1056)
+Total accuracy: 93.3% (11095/11891)
+
+20ns-cbow-topn=10:
+fiil-mastar-şimdiki-zaman: 100.0% (1056/1056)
+isim-tekil-çogul: 94.4% (1256/1331)
+isim-çekim-eki-de-da: 91.7% (968/1056)
+fiil-mastar-gelecek-zaman: 99.1% (1047/1056)
+fiil-mastar-ebilmek-eki: 89.8% (948/1056)
+fiil-mastar-tedir-tadır-eki: 89.1% (941/1056)
+fiil-mastar-mıştır-miştir-eki: 100.0% (1056/1056)
+fiil-mastar-iken-eki: 99.6% (1052/1056)
+fiil-mastar-dili-geçmiş-zaman: 94.4% (997/1056)
+fiil-mastar-öğrenilen-geçmiş-zaman: 92.9% (981/1056)
+fiil-mastar-şimdiki-zaman-hikaye: 95.6% (1010/1056)
+Total accuracy: 95.1% (11312/11891)
+
+
+10ns-sg-topn=1:
+fiil-mastar-şimdiki-zaman: 47.0% (496/1056)
+isim-tekil-çogul: 56.3% (749/1331)
+isim-çekim-eki-de-da: 48.2% (509/1056)
+fiil-mastar-gelecek-zaman: 68.9% (728/1056)
+fiil-mastar-ebilmek-eki: 66.9% (706/1056)
+fiil-mastar-tedir-tadır-eki: 86.7% (916/1056)
+fiil-mastar-mıştır-miştir-eki: 65.2% (688/1056)
+fiil-mastar-iken-eki: 53.7% (567/1056)
+fiil-mastar-dili-geçmiş-zaman: 21.4% (226/1056)
+fiil-mastar-öğrenilen-geçmiş-zaman: 69.1% (730/1056)
+fiil-mastar-şimdiki-zaman-hikaye: 50.9% (538/1056)
+Total accuracy: 57.6% (6853/11891)
+
+
+semantic:
+20ns-cbow-topn=1:
+ülke-başkent: 17.0% (179/1056)
+ülke-milliyet: 65.2% (689/1056)
+Total accuracy: 41.1% (868/2112)
+
+
+10ns-sg-topn=1:
+ülke-başkent: 47.2% (498/1056)
+ülke-milliyet: 68.2% (720/1056)
+Total accuracy: 57.6% (1218/2112)
+
+10ns-sg-topn=2:
+ülke-başkent: 56.4% (596/1056)
+ülke-milliyet: 83.6% (883/1056)
+Total accuracy: 70.0% (1479/2112)
+
+10ns-sg-topn=5:
+ülke-başkent: 71.8% (758/1056)
+ülke-milliyet: 92.9% (981/1056)
+Total accuracy: 82.3% (1739/2112)
+
+10ns-sg-topn=10:
+ülke-başkent: 84.5% (892/1056)
+ülke-milliyet: 97.5% (1030/1056)
+Total accuracy: 91.0% (1922/2112)
