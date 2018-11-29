@@ -9,7 +9,7 @@ from gensim import utils
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
-model = ""
+model = None
 
 
 def tokenize_tr(content, token_min_len=2, token_max_len=50, lower=True):
@@ -59,7 +59,7 @@ def train_model(dataset, output_path, type='fasttext'):
     :return:
     """
     if type == 'fasttext':
-        model = FastText(LineSentence(dataset), alpha=0.025, size=400, window=5, min_count=5, negative=15,
+        model = FastText(LineSentence(dataset), alpha=0.025, size=400, window=5, min_count=5, sg=0, negative=20,
                          workers=multiprocessing.cpu_count())
         model.save(output_path)
     else:
@@ -176,6 +176,10 @@ def _log_evaluate_word_analogies(section):
 
 
 if __name__ == '__main__':
-    model = load_model('model-20ns-cbow', 'fasttext')
+    # train model
+    # model = train_model('dataset.txt', 'model-20ns-cbow', 'fasttext')
+    
+    # load model
+    # model = load_model('model-20ns-cbow', 'fasttext')
     results_syntax = evaluate_word_analogies('test-tr-syntax.txt', topn=2)
     results_semantic = evaluate_word_analogies('test-tr-semantic.txt', topn=2)
